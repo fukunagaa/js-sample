@@ -1,0 +1,47 @@
+/* テキストエリア制御 */
+textarea {
+  resize: none;
+}
+
+/* ulエリア制御 */
+ul {
+  /* アイコンの種類指定 */
+
+  margin-left: 32px;
+  padding: 16px 16px 16px 64px;
+  list-style: square;
+  background-color: #bee0ff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #838be4;
+}
+/* liエリア制御 */
+li {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* ローディング画面 */
+.image-place {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-image {
+  width: 40px;
+  height: 40px;
+  border: 4px #ddd solid;
+  border-top: 4px #2e93e6 solid;
+  border-radius: 50%;
+  animation: sp-anime 0.8s infinite linear;
+}
+/* ローディングアニメーション */
+@keyframes sp-anime {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.is-hide {
+  display: none;
+}
