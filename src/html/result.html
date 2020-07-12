@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>sample</title>
+</head>
+
+<body>
+  <h3>画面遷移完了!!!</h3>
+  <div id="main-container">
+    <div>クライアント制御</div>
+    <div id="cliant-container">
+      <input type="text" id="text-area">
+      <input type="button" id="btn" value="cliant-button">
+    </div>
+    <div>GET REQUEST</div>
+    <div id="submit-get-container">
+      <form action="./action" method="get">
+        <input type="text" name="text" value="get">
+        <input type="submit" id="get-submit" value="submit-get">
+      </form>
+    </div>
+    <div>SUBMIT POST REQUEST</div>
+    <div id="submit-post-container">
+      <form action="./action" method="post">
+        <input type="text" name="text" value="post">
+        <input type="submit" id="post-submit" value="submit-post">
+      </form>
+    </div>
+    <div>AJAX GET REQUEST</div>
+    <div id="ajax-get-container">
+      <div id="ajax-get-request-area">
+        <input type="button" id="ajax-get-btn" value="ajax-get">
+      </div>
+      <div id="ajax-get-result-area">
+        <textarea rows="2" cols="30" id="ajax-get-result" placeholder="ajax-getのレスポンス表示エリア" readonly></textarea>
+      </div>
+    </div>
+    <div>AJAX GET REQUEST</div>
+    <div id="ajax-post-request-area">
+      <input type="button" id="ajax-post-btn" value="ajax-post">
+    </div>
+    <div id="ajax-post-result-area">
+      <textarea rows="2" cols="30" id="ajax-post-result" placeholder="ajax-postのレスポンス表示エリア" readonly></textarea>
+      <div id="append-container"></div>
+    </div>
+  </div>
+  <div id="image-place-container"></div>
+  <script type="text/javascript" src="./dist/app.js"></script>
+  <link rel="stylesheet" href="./src/css/image.css">
+</body>
+
+</html>
